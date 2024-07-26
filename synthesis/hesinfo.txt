@@ -1,0 +1,16 @@
+[Common]
+vhdl_version='VHDL2008'
+
+[LibraryMapping]
+hes_prims='/usr/share/HES-SyntHESer/heslib/64/Aldec/hes_prims'
+unisim='/usr/share/HES-SyntHESer/heslib/64_2008/Xilinx/unisim'
+unisims_ver='/usr/share/HES-SyntHESer/heslib/64/Xilinx/unisims_ver'
+work='./work'
+
+[Messages]
+VERI-1508='ignore'
+VERI-1509='ignore'
+VHDL-1504='ignore'
+VHDL-1505='ignore'
+VHDL-1508='ignore'
+

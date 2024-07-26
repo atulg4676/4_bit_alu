@@ -1,0 +1,3489 @@
+{
+  "creator": "HES-SyntHESer 2023.05.90529",
+  "modules": {
+    "alu": {
+      "attributes": {
+      },
+      "ports": {
+        "in_a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9 ]
+        },
+        "in_b": {
+          "direction": "input",
+          "bits": [ 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "opcode": {
+          "direction": "input",
+          "bits": [ 18, 19, 20, 21 ]
+        },
+        "enable": {
+          "direction": "input",
+          "bits": [ 22 ]
+        },
+        "in_sel": {
+          "direction": "input",
+          "bits": [ 23 ]
+        },
+        "reset": {
+          "direction": "input",
+          "bits": [ 24 ]
+        },
+        "out": {
+          "direction": "output",
+          "bits": [ 25, 26, 27, 28, 29, 30, 31, 32 ]
+        }
+      },
+      "cells": {
+        "out_reg[0]": {
+          "hide_name": 0,
+          "type": "\\out_reg[0] (LDCE)",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "CLR": "input",
+            "D": "input",
+            "G": "input",
+            "GE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLR": [ 24 ],
+            "D": [ 33 ],
+            "G": [ 22 ],
+            "GE": [ "1" ],
+            "Q": [ 25 ]
+          }
+        },
+        "out_reg[0]_D": {
+          "hide_name": 0,
+          "type": "\\out_reg[0]_D (LUT5)",
+          "parameters": {
+            "INIT": "00110011000000111010101000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "I1": [ 35 ],
+            "I2": [ 36 ],
+            "I3": [ 20 ],
+            "I4": [ 21 ],
+            "O": [ 33 ]
+          }
+        },
+        "out_reg[0]_D_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[0]_D_0 (LUT5)",
+          "parameters": {
+            "INIT": "11001100010111110000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 19 ],
+            "I1": [ 37 ],
+            "I2": [ 38 ],
+            "I3": [ 18 ],
+            "I4": [ 20 ],
+            "O": [ 35 ]
+          }
+        },
+        "out_reg[0]_D_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[0]_D_1 (LUT6)",
+          "parameters": {
+            "INIT": "0100011101000111101000001111111111111010111110100100011111111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 23 ],
+            "I2": [ 10 ],
+            "I3": [ 20 ],
+            "I4": [ 19 ],
+            "I5": [ 18 ],
+            "O": [ 34 ]
+          }
+        },
+        "out_reg[0]_D_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[0]_D_2 (LUT6)",
+          "parameters": {
+            "INIT": "1111001111001100110011000000001100000101000001010011010111110101"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 39 ],
+            "I1": [ 2 ],
+            "I2": [ 19 ],
+            "I3": [ 10 ],
+            "I4": [ 18 ],
+            "I5": [ 21 ],
+            "O": [ 36 ]
+          }
+        },
+        "out_reg[1]": {
+          "hide_name": 0,
+          "type": "\\out_reg[1] (LDCE)",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "CLR": "input",
+            "D": "input",
+            "G": "input",
+            "GE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLR": [ 24 ],
+            "D": [ 40 ],
+            "G": [ 22 ],
+            "GE": [ "1" ],
+            "Q": [ 26 ]
+          }
+        },
+        "out_reg[1]_D": {
+          "hide_name": 0,
+          "type": "\\out_reg[1]_D (LUT6)",
+          "parameters": {
+            "INIT": "0000000011111111000000001100110011111010111110101111000011110000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 41 ],
+            "I1": [ 42 ],
+            "I2": [ 43 ],
+            "I3": [ 44 ],
+            "I4": [ 21 ],
+            "I5": [ 20 ],
+            "O": [ 40 ]
+          }
+        },
+        "out_reg[1]_D_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[1]_D_0 (LUT6)",
+          "parameters": {
+            "INIT": "0000110000111111111100000000000011111111111100001010101010101010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 45 ],
+            "I1": [ 23 ],
+            "I2": [ 3 ],
+            "I3": [ 11 ],
+            "I4": [ 19 ],
+            "I5": [ 18 ],
+            "O": [ 42 ]
+          }
+        },
+        "out_reg[1]_D_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[1]_D_0_0 (LUT5)",
+          "parameters": {
+            "INIT": "10011001100110011111000000001111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 3 ],
+            "I2": [ 10 ],
+            "I3": [ 11 ],
+            "I4": [ 23 ],
+            "O": [ 45 ]
+          }
+        },
+        "out_reg[1]_D_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[1]_D_1 (LUT6)",
+          "parameters": {
+            "INIT": "0011001101010101111100001111000000000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 12 ],
+            "I1": [ 4 ],
+            "I2": [ 46 ],
+            "I3": [ 23 ],
+            "I4": [ 18 ],
+            "I5": [ 21 ],
+            "O": [ 44 ]
+          }
+        },
+        "out_reg[1]_D_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[1]_D_1_0 (LUT3)",
+          "parameters": {
+            "INIT": "00110101"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 10 ],
+            "I1": [ 2 ],
+            "I2": [ 23 ],
+            "O": [ 46 ]
+          }
+        },
+        "out_reg[1]_D_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[1]_D_2 (LUT6)",
+          "parameters": {
+            "INIT": "0000000000000000001100111010101000000000000000001111000011110000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 47 ],
+            "I1": [ 45 ],
+            "I2": [ 48 ],
+            "I3": [ 18 ],
+            "I4": [ 21 ],
+            "I5": [ 19 ],
+            "O": [ 43 ]
+          }
+        },
+        "out_reg[1]_D_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[1]_D_2_0 (LUT4)",
+          "parameters": {
+            "INIT": "0111100010001000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 11 ],
+            "I2": [ 3 ],
+            "I3": [ 10 ],
+            "O": [ 47 ]
+          }
+        },
+        "out_reg[1]_D_3": {
+          "hide_name": 0,
+          "type": "\\out_reg[1]_D_3 (LUT4)",
+          "parameters": {
+            "INIT": "0100001100111110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 19 ],
+            "I1": [ 3 ],
+            "I2": [ 11 ],
+            "I3": [ 18 ],
+            "O": [ 41 ]
+          }
+        },
+        "out_reg[2]": {
+          "hide_name": 0,
+          "type": "\\out_reg[2] (LDCE)",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "CLR": "input",
+            "D": "input",
+            "G": "input",
+            "GE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLR": [ 24 ],
+            "D": [ 49 ],
+            "G": [ 22 ],
+            "GE": [ "1" ],
+            "Q": [ 27 ]
+          }
+        },
+        "out_reg[2]_D": {
+          "hide_name": 0,
+          "type": "\\out_reg[2]_D (LUT5)",
+          "parameters": {
+            "INIT": "00000000000000001111111111111000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 20 ],
+            "I1": [ 50 ],
+            "I2": [ 21 ],
+            "I3": [ 51 ],
+            "I4": [ 52 ],
+            "O": [ 49 ]
+          }
+        },
+        "out_reg[2]_D_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[2]_D_0 (LUT6)",
+          "parameters": {
+            "INIT": "0000000000000000001100111010101000000000000000001111000011110000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 55 ],
+            "I3": [ 18 ],
+            "I4": [ 20 ],
+            "I5": [ 19 ],
+            "O": [ 51 ]
+          }
+        },
+        "out_reg[2]_D_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[2]_D_0_0 (LUT6)",
+          "parameters": {
+            "INIT": "1001100110011001100110011001100111110000000000000000111111111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 56 ],
+            "I1": [ 4 ],
+            "I2": [ 10 ],
+            "I3": [ 11 ],
+            "I4": [ 12 ],
+            "I5": [ 23 ],
+            "O": [ 54 ]
+          }
+        },
+        "out_reg[2]_D_0_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[2]_D_0_1 (LUT6)",
+          "parameters": {
+            "INIT": "0110011001100110010110101010101000111100110011001111000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "I1": [ 12 ],
+            "I2": [ 3 ],
+            "I3": [ 11 ],
+            "I4": [ 2 ],
+            "I5": [ 10 ],
+            "O": [ 53 ]
+          }
+        },
+        "out_reg[2]_D_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[2]_D_1 (LUT6)",
+          "parameters": {
+            "INIT": "0000110000111111111100000000000011111111111100001010101010101010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 57 ],
+            "I1": [ 23 ],
+            "I2": [ 4 ],
+            "I3": [ 12 ],
+            "I4": [ 19 ],
+            "I5": [ 18 ],
+            "O": [ 50 ]
+          }
+        },
+        "out_reg[2]_D_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[2]_D_1_0 (LUT6)",
+          "parameters": {
+            "INIT": "0110011001100110011001100110011011111111111100000000000000001111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 58 ],
+            "I1": [ 4 ],
+            "I2": [ 10 ],
+            "I3": [ 11 ],
+            "I4": [ 12 ],
+            "I5": [ 23 ],
+            "O": [ 57 ]
+          }
+        },
+        "out_reg[2]_D_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[2]_D_2 (LUT6)",
+          "parameters": {
+            "INIT": "1100110010101010111100001111000000000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 37 ],
+            "I1": [ 59 ],
+            "I2": [ 60 ],
+            "I3": [ 18 ],
+            "I4": [ 20 ],
+            "I5": [ 21 ],
+            "O": [ 52 ]
+          }
+        },
+        "out_reg[2]_D_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[2]_D_2_0 (LUT4)",
+          "parameters": {
+            "INIT": "1011110011000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 19 ],
+            "I1": [ 4 ],
+            "I2": [ 12 ],
+            "I3": [ 18 ],
+            "O": [ 60 ]
+          }
+        },
+        "out_reg[2]_D_2_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[2]_D_2_1 (LUT3)",
+          "parameters": {
+            "INIT": "00110101"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 11 ],
+            "I1": [ 3 ],
+            "I2": [ 23 ],
+            "O": [ 37 ]
+          }
+        },
+        "out_reg[2]_D_2_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[2]_D_2_2 (LUT3)",
+          "parameters": {
+            "INIT": "00110101"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 13 ],
+            "I1": [ 5 ],
+            "I2": [ 23 ],
+            "O": [ 59 ]
+          }
+        },
+        "out_reg[3]": {
+          "hide_name": 0,
+          "type": "\\out_reg[3] (LDCE)",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "CLR": "input",
+            "D": "input",
+            "G": "input",
+            "GE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLR": [ 24 ],
+            "D": [ 61 ],
+            "G": [ 22 ],
+            "GE": [ "1" ],
+            "Q": [ 28 ]
+          }
+        },
+        "out_reg[3]_D": {
+          "hide_name": 0,
+          "type": "\\out_reg[3]_D (LUT6)",
+          "parameters": {
+            "INIT": "1111000011110000111111110000000011001100110011001010101011111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 62 ],
+            "I1": [ 63 ],
+            "I2": [ 64 ],
+            "I3": [ 65 ],
+            "I4": [ 20 ],
+            "I5": [ 21 ],
+            "O": [ 61 ]
+          }
+        },
+        "out_reg[3]_D_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[3]_D_0 (LUT5)",
+          "parameters": {
+            "INIT": "01010101001111000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 66 ],
+            "I1": [ 67 ],
+            "I2": [ 68 ],
+            "I3": [ 18 ],
+            "I4": [ 19 ],
+            "O": [ 62 ]
+          }
+        },
+        "out_reg[3]_D_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[3]_D_0_0 (LUT6)",
+          "parameters": {
+            "INIT": "0111100010001000100001110111011110000111011101110111100010001000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 12 ],
+            "I2": [ 2 ],
+            "I3": [ 13 ],
+            "I4": [ 69 ],
+            "I5": [ 70 ],
+            "O": [ 67 ]
+          }
+        },
+        "out_reg[3]_D_0_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[3]_D_0_1 (LUT6)",
+          "parameters": {
+            "INIT": "1111000000000000000011111111111110011001100110011001100110011001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 71 ],
+            "I1": [ 13 ],
+            "I2": [ 56 ],
+            "I3": [ 4 ],
+            "I4": [ 5 ],
+            "I5": [ 23 ],
+            "O": [ 66 ]
+          }
+        },
+        "out_reg[3]_D_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[3]_D_1 (LUT6)",
+          "parameters": {
+            "INIT": "0011000000001111000011111111110011011101110111011101110111011101"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 72 ],
+            "I1": [ 19 ],
+            "I2": [ 5 ],
+            "I3": [ 13 ],
+            "I4": [ 18 ],
+            "I5": [ 21 ],
+            "O": [ 65 ]
+          }
+        },
+        "out_reg[3]_D_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[3]_D_2 (LUT6)",
+          "parameters": {
+            "INIT": "0011001100001111110000001100000011111100111111000110011001011010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 73 ],
+            "I1": [ 5 ],
+            "I2": [ 13 ],
+            "I3": [ 23 ],
+            "I4": [ 19 ],
+            "I5": [ 18 ],
+            "O": [ 63 ]
+          }
+        },
+        "out_reg[3]_D_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[3]_D_2_0 (LUT6)",
+          "parameters": {
+            "INIT": "0000000000000000111111110000000000000001000000010000000100000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 11 ],
+            "I1": [ 12 ],
+            "I2": [ 10 ],
+            "I3": [ 58 ],
+            "I4": [ 4 ],
+            "I5": [ 23 ],
+            "O": [ 73 ]
+          }
+        },
+        "out_reg[3]_D_3": {
+          "hide_name": 0,
+          "type": "\\out_reg[3]_D_3 (LUT6)",
+          "parameters": {
+            "INIT": "1111000011110000101010101010101011111111000000001100110011001100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 14 ],
+            "I1": [ 12 ],
+            "I2": [ 6 ],
+            "I3": [ 4 ],
+            "I4": [ 23 ],
+            "I5": [ 18 ],
+            "O": [ 64 ]
+          }
+        },
+        "out_reg[4]": {
+          "hide_name": 0,
+          "type": "\\out_reg[4] (LDCE)",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "CLR": "input",
+            "D": "input",
+            "G": "input",
+            "GE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLR": [ 24 ],
+            "D": [ 74 ],
+            "G": [ 22 ],
+            "GE": [ "1" ],
+            "Q": [ 29 ]
+          }
+        },
+        "out_reg[4]_D": {
+          "hide_name": 0,
+          "type": "\\out_reg[4]_D (LUT5)",
+          "parameters": {
+            "INIT": "11110000111100001100110001010101"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 75 ],
+            "I1": [ 76 ],
+            "I2": [ 77 ],
+            "I3": [ 20 ],
+            "I4": [ 21 ],
+            "O": [ 74 ]
+          }
+        },
+        "out_reg[4]_D_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[4]_D_0 (LUT6)",
+          "parameters": {
+            "INIT": "1010101010101010111100000000111100110011001100110011001100110011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 78 ],
+            "I1": [ 79 ],
+            "I2": [ 80 ],
+            "I3": [ 81 ],
+            "I4": [ 18 ],
+            "I5": [ 19 ],
+            "O": [ 75 ]
+          }
+        },
+        "out_reg[4]_D_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[4]_D_0_0 (LUT2)",
+          "parameters": {
+            "INIT": "1001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 82 ],
+            "I1": [ 83 ],
+            "O": [ 81 ]
+          }
+        },
+        "out_reg[4]_D_0_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[4]_D_0_1 (LUT5)",
+          "parameters": {
+            "INIT": "01010101010101011100000000111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 84 ],
+            "I1": [ 71 ],
+            "I2": [ 13 ],
+            "I3": [ 14 ],
+            "I4": [ 23 ],
+            "O": [ 78 ]
+          }
+        },
+        "out_reg[4]_D_0_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[4]_D_0_1_0 (LUT5)",
+          "parameters": {
+            "INIT": "01111111111111111000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 3 ],
+            "I2": [ 4 ],
+            "I3": [ 5 ],
+            "I4": [ 6 ],
+            "O": [ 84 ]
+          }
+        },
+        "out_reg[4]_D_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[4]_D_1 (LUT6)",
+          "parameters": {
+            "INIT": "0000110000111111111100000000000011111111111100001010101010101010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 85 ],
+            "I1": [ 23 ],
+            "I2": [ 6 ],
+            "I3": [ 14 ],
+            "I4": [ 19 ],
+            "I5": [ 18 ],
+            "O": [ 76 ]
+          }
+        },
+        "out_reg[4]_D_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[4]_D_1_0 (LUT6)",
+          "parameters": {
+            "INIT": "1111000011111111000011110000000001100110011001100110011001100110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 86 ],
+            "I1": [ 14 ],
+            "I2": [ 5 ],
+            "I3": [ 87 ],
+            "I4": [ 6 ],
+            "I5": [ 23 ],
+            "O": [ 85 ]
+          }
+        },
+        "out_reg[4]_D_1_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[4]_D_1_0_0 (LUT3)",
+          "parameters": {
+            "INIT": "00000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "I1": [ 2 ],
+            "I2": [ 3 ],
+            "O": [ 87 ]
+          }
+        },
+        "out_reg[4]_D_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[4]_D_2 (LUT6)",
+          "parameters": {
+            "INIT": "0101010101110101010101010101111101010101010111110101010111111101"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 88 ],
+            "I1": [ 19 ],
+            "I2": [ 6 ],
+            "I3": [ 20 ],
+            "I4": [ 14 ],
+            "I5": [ 18 ],
+            "O": [ 77 ]
+          }
+        },
+        "out_reg[4]_D_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[4]_D_2_0 (LUT6)",
+          "parameters": {
+            "INIT": "0011001101010101111100001111000011111111111111111111111111111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 15 ],
+            "I1": [ 7 ],
+            "I2": [ 59 ],
+            "I3": [ 23 ],
+            "I4": [ 18 ],
+            "I5": [ 20 ],
+            "O": [ 88 ]
+          }
+        },
+        "out_reg[5]": {
+          "hide_name": 0,
+          "type": "\\out_reg[5] (LDCE)",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "CLR": "input",
+            "D": "input",
+            "G": "input",
+            "GE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLR": [ 24 ],
+            "D": [ 89 ],
+            "G": [ 22 ],
+            "GE": [ "1" ],
+            "Q": [ 30 ]
+          }
+        },
+        "out_reg[5]_D": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D (LUT5)",
+          "parameters": {
+            "INIT": "11110000111100001010101011001100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 91 ],
+            "I2": [ 92 ],
+            "I3": [ 20 ],
+            "I4": [ 21 ],
+            "O": [ 89 ]
+          }
+        },
+        "out_reg[5]_D_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_0 (LUT6)",
+          "parameters": {
+            "INIT": "0000110000111111111100000000000011111111111100001010101010101010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 93 ],
+            "I1": [ 23 ],
+            "I2": [ 7 ],
+            "I3": [ 15 ],
+            "I4": [ 19 ],
+            "I5": [ 18 ],
+            "O": [ 90 ]
+          }
+        },
+        "out_reg[5]_D_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_0_0 (LUT6)",
+          "parameters": {
+            "INIT": "0110011001100110011001100110011011110000111111110000111100000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 94 ],
+            "I1": [ 7 ],
+            "I2": [ 14 ],
+            "I3": [ 86 ],
+            "I4": [ 15 ],
+            "I5": [ 23 ],
+            "O": [ 93 ]
+          }
+        },
+        "out_reg[5]_D_0_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_0_0_0 (LUT4)",
+          "parameters": {
+            "INIT": "0000000000000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 13 ],
+            "I1": [ 10 ],
+            "I2": [ 11 ],
+            "I3": [ 12 ],
+            "O": [ 86 ]
+          }
+        },
+        "out_reg[5]_D_0_0_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_0_0_1 (LUT5)",
+          "parameters": {
+            "INIT": "00000000000000000000000000000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "I1": [ 5 ],
+            "I2": [ 6 ],
+            "I3": [ 2 ],
+            "I4": [ 3 ],
+            "O": [ 94 ]
+          }
+        },
+        "out_reg[5]_D_0_0_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_0_0_1_0 (LUT2)",
+          "parameters": {
+            "INIT": "0001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 3 ],
+            "O": [ 58 ]
+          }
+        },
+        "out_reg[5]_D_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_1 (LUT6)",
+          "parameters": {
+            "INIT": "1010101010101010111100000000111111001100110011001100110011001100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 95 ],
+            "I1": [ 96 ],
+            "I2": [ 97 ],
+            "I3": [ 98 ],
+            "I4": [ 18 ],
+            "I5": [ 19 ],
+            "O": [ 91 ]
+          }
+        },
+        "out_reg[5]_D_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_1_0 (LUT3)",
+          "parameters": {
+            "INIT": "01101001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 99 ],
+            "I1": [ 100 ],
+            "I2": [ 101 ],
+            "O": [ 97 ]
+          }
+        },
+        "out_reg[5]_D_1_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_1_1 (LUT3)",
+          "parameters": {
+            "INIT": "00101011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 82 ],
+            "I1": [ 83 ],
+            "I2": [ 80 ],
+            "O": [ 98 ]
+          }
+        },
+        "out_reg[5]_D_1_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_1_2 (LUT6)",
+          "parameters": {
+            "INIT": "1010101010101010101010101010101000111111111111111100000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 102 ],
+            "I1": [ 13 ],
+            "I2": [ 14 ],
+            "I3": [ 71 ],
+            "I4": [ 15 ],
+            "I5": [ 23 ],
+            "O": [ 95 ]
+          }
+        },
+        "out_reg[5]_D_1_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_1_2_0 (LUT6)",
+          "parameters": {
+            "INIT": "0111111111111111111111111111111110000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 3 ],
+            "I2": [ 4 ],
+            "I3": [ 5 ],
+            "I4": [ 6 ],
+            "I5": [ 7 ],
+            "O": [ 102 ]
+          }
+        },
+        "out_reg[5]_D_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_2 (LUT6)",
+          "parameters": {
+            "INIT": "0000111111001111000011111010111100001111000011110000111100001111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 14 ],
+            "I1": [ 6 ],
+            "I2": [ 103 ],
+            "I3": [ 18 ],
+            "I4": [ 23 ],
+            "I5": [ 20 ],
+            "O": [ 92 ]
+          }
+        },
+        "out_reg[5]_D_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[5]_D_2_0 (LUT6)",
+          "parameters": {
+            "INIT": "1010101010101010110011111111000011111111111111111111000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 104 ],
+            "I1": [ 19 ],
+            "I2": [ 7 ],
+            "I3": [ 15 ],
+            "I4": [ 20 ],
+            "I5": [ 18 ],
+            "O": [ 103 ]
+          }
+        },
+        "out_reg[6]": {
+          "hide_name": 0,
+          "type": "\\out_reg[6] (LDCE)",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "CLR": "input",
+            "D": "input",
+            "G": "input",
+            "GE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLR": [ 24 ],
+            "D": [ 105 ],
+            "G": [ 22 ],
+            "GE": [ "1" ],
+            "Q": [ 31 ]
+          }
+        },
+        "out_reg[6]_D": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D (LUT6)",
+          "parameters": {
+            "INIT": "1111111111111111111111111111111111111111000000000000111000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 106 ],
+            "I1": [ 19 ],
+            "I2": [ 107 ],
+            "I3": [ 108 ],
+            "I4": [ 20 ],
+            "I5": [ 109 ],
+            "O": [ 105 ]
+          }
+        },
+        "out_reg[6]_D_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D_0 (LUT6)",
+          "parameters": {
+            "INIT": "1010101010101010110000110011110000000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 110 ],
+            "I1": [ 111 ],
+            "I2": [ 112 ],
+            "I3": [ 113 ],
+            "I4": [ 18 ],
+            "I5": [ 19 ],
+            "O": [ 107 ]
+          }
+        },
+        "out_reg[6]_D_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D_0_0 (LUT5)",
+          "parameters": {
+            "INIT": "11110000000011111001100110011001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 114 ],
+            "I1": [ 16 ],
+            "I2": [ 8 ],
+            "I3": [ 115 ],
+            "I4": [ 23 ],
+            "O": [ 110 ]
+          }
+        },
+        "out_reg[6]_D_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D_1 (LUT4)",
+          "parameters": {
+            "INIT": "0000000011110001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 116 ],
+            "I1": [ 19 ],
+            "I2": [ 117 ],
+            "I3": [ 21 ],
+            "O": [ 108 ]
+          }
+        },
+        "out_reg[6]_D_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D_1_0 (LUT6)",
+          "parameters": {
+            "INIT": "0000111111111111000011111111111111001100001100111010010110100101"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 118 ],
+            "I1": [ 119 ],
+            "I2": [ 16 ],
+            "I3": [ 8 ],
+            "I4": [ 23 ],
+            "I5": [ 18 ],
+            "O": [ 116 ]
+          }
+        },
+        "out_reg[6]_D_1_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D_1_0_0 (LUT6)",
+          "parameters": {
+            "INIT": "0000000000000000000000000000000000000000000000000000000000000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 10 ],
+            "I1": [ 11 ],
+            "I2": [ 12 ],
+            "I3": [ 13 ],
+            "I4": [ 14 ],
+            "I5": [ 15 ],
+            "O": [ 118 ]
+          }
+        },
+        "out_reg[6]_D_1_0_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D_1_0_1 (LUT6)",
+          "parameters": {
+            "INIT": "0000000000000000000000000000000000000000000000000000000000000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 3 ],
+            "I2": [ 4 ],
+            "I3": [ 5 ],
+            "I4": [ 6 ],
+            "I5": [ 7 ],
+            "O": [ 119 ]
+          }
+        },
+        "out_reg[6]_D_1_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D_1_1 (LUT6)",
+          "parameters": {
+            "INIT": "0010000000101010101010101000100011111111111111111111111111111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 19 ],
+            "I1": [ 8 ],
+            "I2": [ 23 ],
+            "I3": [ 16 ],
+            "I4": [ 18 ],
+            "I5": [ 20 ],
+            "O": [ 117 ]
+          }
+        },
+        "out_reg[6]_D_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D_2 (LUT6)",
+          "parameters": {
+            "INIT": "1101000011000011110000111111001000000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 19 ],
+            "I1": [ 20 ],
+            "I2": [ 120 ],
+            "I3": [ 8 ],
+            "I4": [ 16 ],
+            "I5": [ 21 ],
+            "O": [ 109 ]
+          }
+        },
+        "out_reg[6]_D_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D_2_0 (LUT6)",
+          "parameters": {
+            "INIT": "1111000011110000111111111111111111001100101010100000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 15 ],
+            "I1": [ 7 ],
+            "I2": [ 38 ],
+            "I3": [ 23 ],
+            "I4": [ 20 ],
+            "I5": [ 18 ],
+            "O": [ 120 ]
+          }
+        },
+        "out_reg[6]_D_2_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[6]_D_2_0_0 (LUT3)",
+          "parameters": {
+            "INIT": "11001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 17 ],
+            "I1": [ 9 ],
+            "I2": [ 23 ],
+            "O": [ 38 ]
+          }
+        },
+        "out_reg[7]": {
+          "hide_name": 0,
+          "type": "\\out_reg[7] (LDCE)",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "CLR": "input",
+            "D": "input",
+            "G": "input",
+            "GE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLR": [ 24 ],
+            "D": [ 121 ],
+            "G": [ 22 ],
+            "GE": [ "1" ],
+            "Q": [ 32 ]
+          }
+        },
+        "out_reg[7]_D": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D (LUT6)",
+          "parameters": {
+            "INIT": "1111111100000000111111110000000011111110111111100000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 21 ],
+            "I1": [ 122 ],
+            "I2": [ 123 ],
+            "I3": [ 124 ],
+            "I4": [ 125 ],
+            "I5": [ 20 ],
+            "O": [ 121 ]
+          }
+        },
+        "out_reg[7]_D_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_0 (LUT6)",
+          "parameters": {
+            "INIT": "1011101110111111101111111011101100110011001100110011001100110011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 126 ],
+            "I1": [ 19 ],
+            "I2": [ 23 ],
+            "I3": [ 127 ],
+            "I4": [ 17 ],
+            "I5": [ 18 ],
+            "O": [ 122 ]
+          }
+        },
+        "out_reg[7]_D_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_0_0 (LUT2)",
+          "parameters": {
+            "INIT": "1000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 114 ],
+            "I1": [ 16 ],
+            "O": [ 127 ]
+          }
+        },
+        "out_reg[7]_D_0_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_0_0_0 (LUT6)",
+          "parameters": {
+            "INIT": "1000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 10 ],
+            "I1": [ 11 ],
+            "I2": [ 12 ],
+            "I3": [ 13 ],
+            "I4": [ 14 ],
+            "I5": [ 15 ],
+            "O": [ 114 ]
+          }
+        },
+        "out_reg[7]_D_0_0_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_0_0_0_0 (LUT3)",
+          "parameters": {
+            "INIT": "10000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 10 ],
+            "I1": [ 11 ],
+            "I2": [ 12 ],
+            "O": [ 71 ]
+          }
+        },
+        "out_reg[7]_D_0_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_0_1 (LUT4)",
+          "parameters": {
+            "INIT": "0111100000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 115 ],
+            "I1": [ 8 ],
+            "I2": [ 9 ],
+            "I3": [ 23 ],
+            "O": [ 126 ]
+          }
+        },
+        "out_reg[7]_D_0_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_0_1_0 (LUT6)",
+          "parameters": {
+            "INIT": "1000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 3 ],
+            "I2": [ 4 ],
+            "I3": [ 5 ],
+            "I4": [ 6 ],
+            "I5": [ 7 ],
+            "O": [ 115 ]
+          }
+        },
+        "out_reg[7]_D_0_1_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_0_1_0_0 (LUT2)",
+          "parameters": {
+            "INIT": "1000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 3 ],
+            "O": [ 56 ]
+          }
+        },
+        "out_reg[7]_D_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1 (LUT6)",
+          "parameters": {
+            "INIT": "0000000010110010000000000100110100000000010011010000000010110010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 111 ],
+            "I1": [ 113 ],
+            "I2": [ 112 ],
+            "I3": [ 18 ],
+            "I4": [ 128 ],
+            "I5": [ 129 ],
+            "O": [ 123 ]
+          }
+        },
+        "out_reg[7]_D_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0 (LUT6)",
+          "parameters": {
+            "INIT": "1010111011101111000010001000101000001000100010101010111011101111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 130 ],
+            "I1": [ 131 ],
+            "I2": [ 132 ],
+            "I3": [ 99 ],
+            "I4": [ 133 ],
+            "I5": [ 134 ],
+            "O": [ 128 ]
+          }
+        },
+        "out_reg[7]_D_1_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_0 (LUT6)",
+          "parameters": {
+            "INIT": "0000000000000000000000000000000011010101011111110111111101111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 135 ],
+            "I1": [ 2 ],
+            "I2": [ 14 ],
+            "I3": [ 3 ],
+            "I4": [ 13 ],
+            "I5": [ 136 ],
+            "O": [ 131 ]
+          }
+        },
+        "out_reg[7]_D_1_0_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_0_0 (LUT5)",
+          "parameters": {
+            "INIT": "01000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 6 ],
+            "I1": [ 5 ],
+            "I2": [ 4 ],
+            "I3": [ 10 ],
+            "I4": [ 11 ],
+            "O": [ 136 ]
+          }
+        },
+        "out_reg[7]_D_1_0_0_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_0_1 (LUT4)",
+          "parameters": {
+            "INIT": "0111100010001000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 14 ],
+            "I2": [ 3 ],
+            "I3": [ 13 ],
+            "O": [ 137 ]
+          }
+        },
+        "out_reg[7]_D_1_0_0_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_0_2 (LUT5)",
+          "parameters": {
+            "INIT": "10111111110000000100000011000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "I1": [ 5 ],
+            "I2": [ 11 ],
+            "I3": [ 10 ],
+            "I4": [ 6 ],
+            "O": [ 135 ]
+          }
+        },
+        "out_reg[7]_D_1_0_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_1 (LUT5)",
+          "parameters": {
+            "INIT": "10000111011101110111100010001000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 14 ],
+            "I2": [ 4 ],
+            "I3": [ 13 ],
+            "I4": [ 138 ],
+            "O": [ 132 ]
+          }
+        },
+        "out_reg[7]_D_1_0_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_1_0 (LUT4)",
+          "parameters": {
+            "INIT": "0111100010001000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 14 ],
+            "I2": [ 4 ],
+            "I3": [ 13 ],
+            "O": [ 139 ]
+          }
+        },
+        "out_reg[7]_D_1_0_1_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_1_1 (LUT5)",
+          "parameters": {
+            "INIT": "10111111110000000100000011000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 5 ],
+            "I1": [ 6 ],
+            "I2": [ 11 ],
+            "I3": [ 10 ],
+            "I4": [ 7 ],
+            "O": [ 138 ]
+          }
+        },
+        "out_reg[7]_D_1_0_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_2 (LUT5)",
+          "parameters": {
+            "INIT": "11000000011010100011111111000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 5 ],
+            "I2": [ 12 ],
+            "I3": [ 140 ],
+            "I4": [ 15 ],
+            "O": [ 99 ]
+          }
+        },
+        "out_reg[7]_D_1_0_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_2_0 (LUT4)",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 3 ],
+            "I2": [ 13 ],
+            "I3": [ 14 ],
+            "O": [ 140 ]
+          }
+        },
+        "out_reg[7]_D_1_0_3": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_3 (LUT5)",
+          "parameters": {
+            "INIT": "11000000011010100011111111000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 6 ],
+            "I2": [ 12 ],
+            "I3": [ 141 ],
+            "I4": [ 15 ],
+            "O": [ 134 ]
+          }
+        },
+        "out_reg[7]_D_1_0_3_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_3_0 (LUT4)",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 4 ],
+            "I2": [ 13 ],
+            "I3": [ 14 ],
+            "O": [ 141 ]
+          }
+        },
+        "out_reg[7]_D_1_0_4": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_4 (LUT5)",
+          "parameters": {
+            "INIT": "11111000000001110000011111111000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 139 ],
+            "I1": [ 138 ],
+            "I2": [ 142 ],
+            "I3": [ 143 ],
+            "I4": [ 144 ],
+            "O": [ 133 ]
+          }
+        },
+        "out_reg[7]_D_1_0_4_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_4_0 (LUT5)",
+          "parameters": {
+            "INIT": "01000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 7 ],
+            "I1": [ 6 ],
+            "I2": [ 5 ],
+            "I3": [ 10 ],
+            "I4": [ 11 ],
+            "O": [ 142 ]
+          }
+        },
+        "out_reg[7]_D_1_0_4_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_4_1 (LUT6)",
+          "parameters": {
+            "INIT": "1001010100111111011010101100000001101010110000000110101011000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 4 ],
+            "I2": [ 14 ],
+            "I3": [ 16 ],
+            "I4": [ 5 ],
+            "I5": [ 13 ],
+            "O": [ 143 ]
+          }
+        },
+        "out_reg[7]_D_1_0_4_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_4_2 (LUT5)",
+          "parameters": {
+            "INIT": "10111111110000000100000011000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 6 ],
+            "I1": [ 7 ],
+            "I2": [ 11 ],
+            "I3": [ 10 ],
+            "I4": [ 8 ],
+            "O": [ 144 ]
+          }
+        },
+        "out_reg[7]_D_1_0_5": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_0_5 (LUT5)",
+          "parameters": {
+            "INIT": "00010011001111110011111100111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 140 ],
+            "I2": [ 15 ],
+            "I3": [ 12 ],
+            "I4": [ 5 ],
+            "O": [ 130 ]
+          }
+        },
+        "out_reg[7]_D_1_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1 (LUT6)",
+          "parameters": {
+            "INIT": "0101001110101100101011000101001110101100010100110101001110101100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 134 ],
+            "I1": [ 145 ],
+            "I2": [ 133 ],
+            "I3": [ 146 ],
+            "I4": [ 147 ],
+            "I5": [ 148 ],
+            "O": [ 129 ]
+          }
+        },
+        "out_reg[7]_D_1_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1_0 (LUT6)",
+          "parameters": {
+            "INIT": "0110010101010101010110101010101010011010101010100101101010101010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 143 ],
+            "I1": [ 6 ],
+            "I2": [ 7 ],
+            "I3": [ 11 ],
+            "I4": [ 10 ],
+            "I5": [ 8 ],
+            "O": [ 145 ]
+          }
+        },
+        "out_reg[7]_D_1_1_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1_1 (LUT5)",
+          "parameters": {
+            "INIT": "01111000100001111000011101111000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 16 ],
+            "I2": [ 149 ],
+            "I3": [ 150 ],
+            "I4": [ 151 ],
+            "O": [ 146 ]
+          }
+        },
+        "out_reg[7]_D_1_1_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1_1_0 (LUT4)",
+          "parameters": {
+            "INIT": "1000011101110111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 8 ],
+            "I1": [ 11 ],
+            "I2": [ 9 ],
+            "I3": [ 10 ],
+            "O": [ 149 ]
+          }
+        },
+        "out_reg[7]_D_1_1_1_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1_1_1 (LUT4)",
+          "parameters": {
+            "INIT": "1000011101110111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 5 ],
+            "I1": [ 14 ],
+            "I2": [ 6 ],
+            "I3": [ 13 ],
+            "O": [ 150 ]
+          }
+        },
+        "out_reg[7]_D_1_1_1_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1_1_2 (LUT6)",
+          "parameters": {
+            "INIT": "0111111111111111100000000000000010000000000000001000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 7 ],
+            "I1": [ 8 ],
+            "I2": [ 10 ],
+            "I3": [ 11 ],
+            "I4": [ 2 ],
+            "I5": [ 17 ],
+            "O": [ 151 ]
+          }
+        },
+        "out_reg[7]_D_1_1_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1_2 (LUT5)",
+          "parameters": {
+            "INIT": "11111000000001110000011111111000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 143 ],
+            "I1": [ 144 ],
+            "I2": [ 152 ],
+            "I3": [ 153 ],
+            "I4": [ 154 ],
+            "O": [ 147 ]
+          }
+        },
+        "out_reg[7]_D_1_1_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1_2_0 (LUT5)",
+          "parameters": {
+            "INIT": "01000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 8 ],
+            "I1": [ 7 ],
+            "I2": [ 6 ],
+            "I3": [ 10 ],
+            "I4": [ 11 ],
+            "O": [ 152 ]
+          }
+        },
+        "out_reg[7]_D_1_1_2_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1_2_1 (LUT6)",
+          "parameters": {
+            "INIT": "0000011101110111011111111111111101111111111111110111111111111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 16 ],
+            "I2": [ 14 ],
+            "I3": [ 4 ],
+            "I4": [ 5 ],
+            "I5": [ 13 ],
+            "O": [ 153 ]
+          }
+        },
+        "out_reg[7]_D_1_1_2_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1_2_2 (LUT4)",
+          "parameters": {
+            "INIT": "1000011101110111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "I1": [ 15 ],
+            "I2": [ 7 ],
+            "I3": [ 12 ],
+            "O": [ 154 ]
+          }
+        },
+        "out_reg[7]_D_1_1_3": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_1_3 (LUT5)",
+          "parameters": {
+            "INIT": "00010011001111110011111100111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 141 ],
+            "I2": [ 15 ],
+            "I3": [ 12 ],
+            "I4": [ 6 ],
+            "O": [ 148 ]
+          }
+        },
+        "out_reg[7]_D_1_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_2 (LUT3)",
+          "parameters": {
+            "INIT": "00010100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 101 ],
+            "I1": [ 99 ],
+            "I2": [ 100 ],
+            "O": [ 111 ]
+          }
+        },
+        "out_reg[7]_D_1_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_2_0 (LUT5)",
+          "parameters": {
+            "INIT": "11111000000001110000011111111000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 137 ],
+            "I1": [ 135 ],
+            "I2": [ 136 ],
+            "I3": [ 139 ],
+            "I4": [ 138 ],
+            "O": [ 100 ]
+          }
+        },
+        "out_reg[7]_D_1_2_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_2_1 (LUT6)",
+          "parameters": {
+            "INIT": "0000111101111111000000000000011100000000000001110000111101111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 155 ],
+            "I1": [ 69 ],
+            "I2": [ 156 ],
+            "I3": [ 157 ],
+            "I4": [ 135 ],
+            "I5": [ 137 ],
+            "O": [ 101 ]
+          }
+        },
+        "out_reg[7]_D_1_2_1_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_2_1_0 (LUT5)",
+          "parameters": {
+            "INIT": "01000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 5 ],
+            "I1": [ 4 ],
+            "I2": [ 3 ],
+            "I3": [ 10 ],
+            "I4": [ 11 ],
+            "O": [ 157 ]
+          }
+        },
+        "out_reg[7]_D_1_2_1_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_2_1_1 (LUT2)",
+          "parameters": {
+            "INIT": "1000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 13 ],
+            "O": [ 155 ]
+          }
+        },
+        "out_reg[7]_D_1_2_1_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_2_1_2 (LUT5)",
+          "parameters": {
+            "INIT": "10111111110000000100000011000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 4 ],
+            "I2": [ 11 ],
+            "I3": [ 10 ],
+            "I4": [ 5 ],
+            "O": [ 69 ]
+          }
+        },
+        "out_reg[7]_D_1_2_1_3": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_2_1_3 (LUT2)",
+          "parameters": {
+            "INIT": "1000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "I1": [ 12 ],
+            "O": [ 156 ]
+          }
+        },
+        "out_reg[7]_D_1_3": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_3 (LUT6)",
+          "parameters": {
+            "INIT": "1101010000101011001010111101010000101011110101001101010000101011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 131 ],
+            "I1": [ 132 ],
+            "I2": [ 99 ],
+            "I3": [ 134 ],
+            "I4": [ 133 ],
+            "I5": [ 130 ],
+            "O": [ 112 ]
+          }
+        },
+        "out_reg[7]_D_1_4": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_4 (LUT6)",
+          "parameters": {
+            "INIT": "1111111100101011001010111111111100101011111111111111111100101011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 82 ],
+            "I1": [ 83 ],
+            "I2": [ 80 ],
+            "I3": [ 99 ],
+            "I4": [ 100 ],
+            "I5": [ 101 ],
+            "O": [ 113 ]
+          }
+        },
+        "out_reg[7]_D_1_4_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_4_0 (LUT6)",
+          "parameters": {
+            "INIT": "0111111100010101000101010001010100010101011111110111111101111111"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 70 ],
+            "I1": [ 3 ],
+            "I2": [ 12 ],
+            "I3": [ 2 ],
+            "I4": [ 13 ],
+            "I5": [ 69 ],
+            "O": [ 82 ]
+          }
+        },
+        "out_reg[7]_D_1_4_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_4_0_0 (LUT5)",
+          "parameters": {
+            "INIT": "01000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "I1": [ 3 ],
+            "I2": [ 2 ],
+            "I3": [ 10 ],
+            "I4": [ 11 ],
+            "O": [ 70 ]
+          }
+        },
+        "out_reg[7]_D_1_4_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_4_1 (LUT6)",
+          "parameters": {
+            "INIT": "0000011111111000111110000000011111111000000001110000011111111000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 155 ],
+            "I1": [ 69 ],
+            "I2": [ 157 ],
+            "I3": [ 137 ],
+            "I4": [ 135 ],
+            "I5": [ 156 ],
+            "O": [ 83 ]
+          }
+        },
+        "out_reg[7]_D_1_4_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_4_2 (LUT5)",
+          "parameters": {
+            "INIT": "10010101011010100000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 2 ],
+            "I2": [ 13 ],
+            "I3": [ 69 ],
+            "I4": [ 68 ],
+            "O": [ 80 ]
+          }
+        },
+        "out_reg[7]_D_1_4_2_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_1_4_2_0 (LUT6)",
+          "parameters": {
+            "INIT": "1111000010001000000000000000000000000000000000000000000000000000"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 11 ],
+            "I2": [ 4 ],
+            "I3": [ 10 ],
+            "I4": [ 2 ],
+            "I5": [ 12 ],
+            "O": [ 68 ]
+          }
+        },
+        "out_reg[7]_D_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_2 (LUT6)",
+          "parameters": {
+            "INIT": "0011000000001111000011111111110011101110111011101110111011101110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 158 ],
+            "I1": [ 19 ],
+            "I2": [ 9 ],
+            "I3": [ 17 ],
+            "I4": [ 18 ],
+            "I5": [ 21 ],
+            "O": [ 125 ]
+          }
+        },
+        "out_reg[7]_D_3": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_3 (LUT6)",
+          "parameters": {
+            "INIT": "0000111100110011000000000011001111111111000000001010101010101010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 159 ],
+            "I1": [ 104 ],
+            "I2": [ 46 ],
+            "I3": [ 160 ],
+            "I4": [ 19 ],
+            "I5": [ 21 ],
+            "O": [ 124 ]
+          }
+        },
+        "out_reg[7]_D_3_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_3_0 (LUT6)",
+          "parameters": {
+            "INIT": "1111000000000000111100000000000000110011110011000101101001011010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 161 ],
+            "I1": [ 162 ],
+            "I2": [ 17 ],
+            "I3": [ 9 ],
+            "I4": [ 23 ],
+            "I5": [ 18 ],
+            "O": [ 159 ]
+          }
+        },
+        "out_reg[7]_D_3_0_0": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_3_0_0 (LUT2)",
+          "parameters": {
+            "INIT": "0100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 16 ],
+            "I1": [ 118 ],
+            "O": [ 161 ]
+          }
+        },
+        "out_reg[7]_D_3_0_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_3_0_1 (LUT2)",
+          "parameters": {
+            "INIT": "0100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 8 ],
+            "I1": [ 119 ],
+            "O": [ 162 ]
+          }
+        },
+        "out_reg[7]_D_3_1": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_3_1 (LUT3)",
+          "parameters": {
+            "INIT": "00110101"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 16 ],
+            "I1": [ 8 ],
+            "I2": [ 23 ],
+            "O": [ 104 ]
+          }
+        },
+        "out_reg[7]_D_3_2": {
+          "hide_name": 0,
+          "type": "\\out_reg[7]_D_3_2 (LUT5)",
+          "parameters": {
+            "INIT": "11111111010001110000000011111010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 9 ],
+            "I1": [ 23 ],
+            "I2": [ 17 ],
+            "I3": [ 21 ],
+            "I4": [ 18 ],
+            "O": [ 160 ]
+          }
+        },
+        "temp_41_dyn_add_sub": {
+          "hide_name": 0,
+          "type": "\\temp_41_dyn_add_sub (CARRY4)",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ "0" ],
+            "CO": [ 163, 164, 165, 166 ],
+            "CYINIT": [ 18 ],
+            "DI": [ 2, 3, 4, 5 ],
+            "O": [ 39, 48, 55, 72 ],
+            "S": [ 167, 168, 169, 170 ]
+          }
+        },
+        "temp_41_dyn_add_sub_1": {
+          "hide_name": 0,
+          "type": "\\temp_41_dyn_add_sub_1 (CARRY4)",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ 166 ],
+            "CO": [ 171, 172, 173, 174 ],
+            "CYINIT": [ "0" ],
+            "DI": [ 6, 7, 8, 9 ],
+            "O": [ 79, 96, 106, 158 ],
+            "S": [ 175, 176, 177, 178 ]
+          }
+        },
+        "temp_41_dyn_add_sub_P": {
+          "hide_name": 0,
+          "type": "\\temp_41_dyn_add_sub_P (LUT3)",
+          "parameters": {
+            "INIT": "10010110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 2 ],
+            "I1": [ 10 ],
+            "I2": [ 18 ],
+            "O": [ 167 ]
+          }
+        },
+        "temp_41_dyn_add_sub_P_1": {
+          "hide_name": 0,
+          "type": "\\temp_41_dyn_add_sub_P_1 (LUT3)",
+          "parameters": {
+            "INIT": "10010110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 3 ],
+            "I1": [ 11 ],
+            "I2": [ 18 ],
+            "O": [ 168 ]
+          }
+        },
+        "temp_41_dyn_add_sub_P_2": {
+          "hide_name": 0,
+          "type": "\\temp_41_dyn_add_sub_P_2 (LUT3)",
+          "parameters": {
+            "INIT": "10010110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "I1": [ 12 ],
+            "I2": [ 18 ],
+            "O": [ 169 ]
+          }
+        },
+        "temp_41_dyn_add_sub_P_3": {
+          "hide_name": 0,
+          "type": "\\temp_41_dyn_add_sub_P_3 (LUT3)",
+          "parameters": {
+            "INIT": "10010110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 5 ],
+            "I1": [ 13 ],
+            "I2": [ 18 ],
+            "O": [ 170 ]
+          }
+        },
+        "temp_41_dyn_add_sub_P_4": {
+          "hide_name": 0,
+          "type": "\\temp_41_dyn_add_sub_P_4 (LUT3)",
+          "parameters": {
+            "INIT": "10010110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 6 ],
+            "I1": [ 14 ],
+            "I2": [ 18 ],
+            "O": [ 175 ]
+          }
+        },
+        "temp_41_dyn_add_sub_P_5": {
+          "hide_name": 0,
+          "type": "\\temp_41_dyn_add_sub_P_5 (LUT3)",
+          "parameters": {
+            "INIT": "10010110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 7 ],
+            "I1": [ 15 ],
+            "I2": [ 18 ],
+            "O": [ 176 ]
+          }
+        },
+        "temp_41_dyn_add_sub_P_6": {
+          "hide_name": 0,
+          "type": "\\temp_41_dyn_add_sub_P_6 (LUT3)",
+          "parameters": {
+            "INIT": "10010110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 8 ],
+            "I1": [ 16 ],
+            "I2": [ 18 ],
+            "O": [ 177 ]
+          }
+        },
+        "temp_41_dyn_add_sub_P_7": {
+          "hide_name": 0,
+          "type": "\\temp_41_dyn_add_sub_P_7 (LUT3)",
+          "parameters": {
+            "INIT": "10010110"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 9 ],
+            "I1": [ 17 ],
+            "I2": [ 18 ],
+            "O": [ 178 ]
+          }
+        }
+      },
+    }
+  }
+}
