@@ -2,7 +2,7 @@
 Implementation of ALU using RTL to GDSII flow.
 
 Here we are doing implementation of 4-bit ALU(Arthematic logical unit) using RTL (Register
-transfer level) to GDSII (Graphic design system II) stream. we are usign the QFlow VSD Open Source EDA Tools.
+transfer level) to GDSII (Graphic design system II) stream. we are usign the fully automated QFlow VSD Open Source EDA Tools.
 
 The arithmetic logic unit is a combination of digital circuits used to perform various arithmetic operations and bitwise logical operations on integer binary numbers. The input of the ALU is the data to be operated on which is called the operand and a opcode that selects the operation to be performed. The output of the ALU is the result of the operation performed. The block diagram of implementedn ALU is shown in figure. 
 
