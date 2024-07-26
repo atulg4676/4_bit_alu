@@ -1,0 +1,42 @@
+Qflow static timing analysis logfile created on Fri Jul 26 20:52:33 IST 2024
+Converting qrouter output to vesta delay format
+Running rc2dly -r ALU.rc -l /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib -d ALU.dly
+Converting qrouter output to SPEF delay format
+Running rc2dly -D : -r ALU.rc -l /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib -d ALU.spef
+Converting qrouter output to SDF delay format
+Running rc2dly -r ALU.rc -l /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib -d ALU.sdf
+Running vesta static timing analysis with back-annotated extracted wire delays
+vesta -c -d ALU.dly --long ALU.rtlnopwr.v /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib
+----------------------------------------------
+Vesta static timing analysis tool
+for qflow 1.3.17
+(c) 2013-2018 Tim Edwards, Open Circuit Design
+----------------------------------------------
+
+Parsing library "osu035_stdcells"
+End of library at line 6636
+Parsing module "ALU"
+Lib read /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib:  Processed 6637 lines.
+Verilog netlist read:  Processed 768 lines.
+Number of paths analyzed:  0
+
+Top 0 maximum delay paths:
+Computed maximum clock frequency (zero margin) = inf MHz
+-----------------------------------------
+
+Number of paths analyzed:  0
+
+Top 0 minimum delay paths:
+Design meets minimum hold timing.
+-----------------------------------------
+
+Number of paths analyzed:  0
+
+Top 0 maximum delay paths:
+-----------------------------------------
+
+Number of paths analyzed:  0
+
+Top 0 minimum delay paths:
+-----------------------------------------
+
