@@ -1,4 +1,4 @@
-module alu( in_a, in_b, opcode, enable, in_sel, reset, out);
+module alu ( in_a, in_b, opcode, enable, in_sel, reset, out );
   
   input  [7:0] in_a; // input variable A
   input  [7:0] in_b; // input variable B
