@@ -28,3 +28,10 @@ Here is the complete list of operations and their respective opcodes:
 4'b1101 :13 // logical right shift operation <br>
 4'b1110 :14 // rotate left operation <br>
 4'b1111 :15 // rotate right operation <br>
+                                                    RTL to GDSII flow
+The design process in VLSI (Very Large Scale Integration) is split into two main parts: front-end design and back-end design.
+    (A) Front-End Design: This part involves creating the solution to a problem and designing the circuit at the Register-Transfer Level (RTL). The steps include:
+                          Designing the architecture at the block level <br>
+                          Writing the RTL code <br>
+                          Performing functional verification of the design <br>
+    (B)Back-End Design: This part involves taking the netlist (a structural description of the circuit) from the front-end and transforming it into a physical layout. This                           layout includes geometric design information for all physical layers used for interconnection. The final output is a GDSII file, which is the                                 standard format for IC layout data.
