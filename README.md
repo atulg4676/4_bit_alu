@@ -1,4 +1,4 @@
-# 4_bit_alu
+# 4 Bit ALU
 Implementation of ALU using RTL to GDSII flow.
 
 Here we are doing implementation of 4-bit ALU(Arthematic logical unit) using RTL (Register
