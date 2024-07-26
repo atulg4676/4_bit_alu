@@ -6,4 +6,5 @@ transfer level) to GDSII (Graphic design system II) stream. we are usign the QFl
 
 here is the block diagram representation of an Arthematic logical unit (ALU).
 
-![alu](https://github.com/user-attachments/assets/fab3ca1e-7aac-41ef-8ab5-7a9cab622c96)
+![alu](https://github.com/user-attachments/assets/fb1c06f8-7145-41d2-86a0-e75ded416650)
+
