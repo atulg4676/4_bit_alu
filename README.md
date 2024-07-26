@@ -40,19 +40,19 @@ The design process in VLSI (Very Large Scale Integration) is split into two main
 
 **The following are the steps for RTL to GDSII flow:**
 
-**Architecture** :
+**1. Architecture** :
 At this stage, the functions, features, and specifications of the chip are defined based on the customer's requirements. This is the initial step where requirements are gathered and the design is created at the block level.
 
-**RTL Level** :
+**2. RTL Level** :
 Based on the chip specifications, RTL (Register-Transfer Level) code is written in Verilog HDL (Hardware Description Language). This code is then verified through behavior simulation to ensure it meets the design requirements.
 
-**Synthesis** :
+**3. Synthesis** :
 In this step, the RTL code and its testbench are converted into a gate-level netlist using a logical synthesis tool. This netlist describes the logic cells and their interconnections. The synthesis tool ensures the netlist meets specifications for timing, area, and power.
 
-**Static Timing Analysis (STA)** :
+**4. Static Timing Analysis (STA)** :
 STA is used to verify the timing constraints of the digital design. It checks the design for timing performance by analyzing all possible paths for timing violations. STA breaks the design into different timing paths, calculates signal propagation delays, and checks for any timing issues.
 
-**Physical Design** :
+**5. Physical Design** :
 This stage involves several steps, including:
 
 **Floor Planning:** Arranging the different blocks on the chip. <br>
@@ -63,5 +63,5 @@ This stage involves several steps, including:
 
 After these steps, physical verification is performed to ensure the layout works as intended. The Design Exchange Format (DEF) file of the layout is then generated and optimized using the Library Exchange Format (LEF) files.
 
-**GDSII**
+**6. GDSII**
 After verification, the final design is saved in a GDSII file. This binary file format represents the geometric shapes, text labels, and other information about the chip layout, which is then used for manufacturing.
