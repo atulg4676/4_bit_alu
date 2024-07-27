@@ -1,7 +1,7 @@
 To run **Qflow** opensource tool in Ubuntu.
 1. Open Terminal:
    
-    ![open terminal](https://github.com/user-attachments/assets/9389b7dd-eca1-44f3-b266-372f71a8540b)
+    ![image alt](https://github.com/atulg4676/4_bit_alu/blob/main/qflow%20opensource%20tool/img/open%20terminal.jpg?raw=true)
 
 2. Change Directory to vsdflow: **cd vsdflow**
    
