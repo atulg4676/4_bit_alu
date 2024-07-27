@@ -6,7 +6,7 @@ transfer level) to GDSII (Graphic design system II) stream. we are usign the ful
 
 The arithmetic logic unit is a combination of digital circuits used to perform various arithmetic operations and bitwise logical operations on integer binary numbers. The input of the ALU is the data to be operated on which is called the operand and a opcode that selects the operation to be performed. The output of the ALU is the result of the operation performed. The block diagram of implementedn ALU is shown in figure. 
 
-![alu](https://github.com/user-attachments/assets/fb1c06f8-7145-41d2-86a0-e75ded416650)
+![image alt](https://github.com/atulg4676/4_bit_alu/blob/main/alu.jpg?raw=true)
 
 In this design, the Op1 and Op2 represents the 8-bit inputs which are first given to the registers. output of the registers acts as the input to the ALU circuit which are given with the opcode that selects the operation of the ALU that is to be performed. The implemented ALU is of 8-bits and performs 16 operations, among which the arithmetic operations are addition, subtraction, multiplication, increment and decrement, and the bitwise logical operations are AND, OR, NOT, XOR, XNOR, NAND, NOR. Shifting operations performed are logical and arithmetic , left and right shift operations.
 
